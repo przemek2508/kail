@@ -1,0 +1,10 @@
+.\objects\lcd4bit.o: ..\..\STM32F4-Discovery_FW_V1.1.0\stm32wp\Project\R4_list4_6-4_7-4_8\lcd4bit.c
+.\objects\lcd4bit.o: ..\..\STM32F4-Discovery_FW_V1.1.0\stm32wp\Project\R4_list4_6-4_7-4_8\lcd4bit.h
+.\objects\lcd4bit.o: ..\..\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\ST\STM32F4xx\Include\stm32f4xx.h
+.\objects\lcd4bit.o: ..\..\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\Include\core_cm4.h
+.\objects\lcd4bit.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\lcd4bit.o: ..\..\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\Include\core_cmInstr.h
+.\objects\lcd4bit.o: ..\..\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\Include\core_cmFunc.h
+.\objects\lcd4bit.o: ..\..\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\Include\core_cm4_simd.h
+.\objects\lcd4bit.o: ..\..\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\ST\STM32F4xx\Include\system_stm32f4xx.h
+.\objects\lcd4bit.o: ..\..\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\IO_Toggle\stm32f4xx_conf.h

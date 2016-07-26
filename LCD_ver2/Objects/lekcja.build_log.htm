@@ -1,0 +1,192 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Przemek Microsoft, Microsoft, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.14.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.14.0_KEIL
+Dialog DLL:      TCM.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+C:\Users\Przemek\Desktop\MIKROKONTROLERY\LCD_ver2\lekcja.uvprojx
+Project File Date:  11/04/2015
+
+<h2>Output:</h2>
+Rebuild target 'Target 1'
+compiling main.c...
+..\..\..\Desktop\hd44780.h(64): warning:  #1295-D: Deprecated declaration hd44780_init_brightness - give arg types
+  void hd44780_init_brightness();
+..\..\..\Desktop\hd44780.h(65): warning:  #1295-D: Deprecated declaration hd44780_init_contrast - give arg types
+  void hd44780_init_contrast();
+..\..\..\Desktop\hd44780.h(69): warning:  #1-D: last line of file ends without a newline
+  /** @}*/
+main.c: 3 warnings, 0 errors
+compiling stm32f4xx_gpio.c...
+compiling stm32f4xx_rcc.c...
+compiling stm32f4_delay.c...
+..\TM_Kopia\TM_DELAY\stm32f4_delay.c(483): warning:  #1-D: last line of file ends without a newline
+   
+..\TM_Kopia\TM_DELAY\stm32f4_delay.c: 1 warning, 0 errors
+compiling hd44780.c...
+..\..\hd44780.h(64): warning:  #1295-D: Deprecated declaration hd44780_init_brightness - give arg types
+  void hd44780_init_brightness();
+..\..\hd44780.h(65): warning:  #1295-D: Deprecated declaration hd44780_init_contrast - give arg types
+  void hd44780_init_contrast();
+..\..\hd44780.h(69): warning:  #1-D: last line of file ends without a newline
+  /** @}*/
+..\..\hd44780.c(106): error:  #20: identifier "TIM_HandleTypeDef" is undefined
+  static TIM_HandleTypeDef Handle_Lcd;
+..\..\hd44780.c(107): error:  #20: identifier "TIM_HandleTypeDef" is undefined
+  static TIM_HandleTypeDef Handle_Brigt;
+..\..\hd44780.c(108): error:  #20: identifier "TIM_HandleTypeDef" is undefined
+  static TIM_HandleTypeDef Handle_Con;
+..\..\hd44780.c(118): error:  #20: identifier "DWT" is undefined
+        DWT->CYCCNT = 0;
+..\..\hd44780.c(119): error:  #20: identifier "DWT_CTRL_CYCCNTENA_Msk" is undefined
+        DWT->CTRL |= DWT_CTRL_CYCCNTENA_Msk;
+..\..\hd44780.c(124): error:  #20: identifier "DWT" is undefined
+        uint32_t ccr_start = DWT->CYCCNT;
+..\..\hd44780.c(146): error:  #20: identifier "GPIO_MODE_INPUT" is undefined
+        dir = GPIO_MODE_INPUT;
+..\..\hd44780.c(150): error:  #20: identifier "GPIO_MODE_OUTPUT_PP" is undefined
+                dir = GPIO_MODE_OUTPUT_PP;
+..\..\hd44780.c(153): error:  #136: struct "<unnamed>" has no field "Pin"
+        gpio_init.Pin = pins;
+..\..\hd44780.c(154): error:  #136: struct "<unnamed>" has no field "Mode"
+        gpio_init.Mode = dir;
+..\..\hd44780.c(155): error:  #136: struct "<unnamed>" has no field "Pull"
+        gpio_init.Pull = GPIO_NOPULL;
+..\..\hd44780.c(155): error:  #20: identifier "GPIO_NOPULL" is undefined
+        gpio_init.Pull = GPIO_NOPULL;
+..\..\hd44780.c(156): error:  #136: struct "<unnamed>" has no field "Speed"
+        gpio_init.Speed = GPIO_SPEED_MEDIUM;
+..\..\hd44780.c(156): error:  #20: identifier "GPIO_SPEED_MEDIUM" is undefined
+        gpio_init.Speed = GPIO_SPEED_MEDIUM;
+..\..\hd44780.c(158): warning:  #223-D: function "HAL_GPIO_Init" declared implicitly
+        HAL_GPIO_Init(Lcd_Conf.gpio, &gpio_init);
+..\..\hd44780.c(164): warning:  #223-D: function "HAL_GPIO_TogglePin" declared implicitly
+                HAL_GPIO_TogglePin(Lcd_Conf.gpio, Lcd_Conf.e);
+..\..\hd44780.c(167): warning:  #223-D: function "HAL_GPIO_TogglePin" declared implicitly
+        HAL_GPIO_TogglePin(Lcd_Conf.gpio, Lcd_Conf.e);
+..\..\hd44780.c(175): warning:  #223-D: function "HAL_GPIO_WritePin" declared implicitly
+        HAL_GPIO_WritePin(Lcd_Conf.gpio, Lcd_Conf.rw, GPIO_PIN_RESET);
+..\..\hd44780.c(175): error:  #20: identifier "GPIO_PIN_RESET" is undefined
+        HAL_GPIO_WritePin(Lcd_Conf.gpio, Lcd_Conf.rw, GPIO_PIN_RESET);
+..\..\hd44780.c(189): warning:  #223-D: function "HAL_GPIO_WritePin" declared implicitly
+        HAL_GPIO_WritePin(Lcd_Conf.gpio, Lcd_Conf.rs | Lcd_Conf.db7,
+..\..\hd44780.c(190): error:  #20: identifier "GPIO_PIN_RESET" is undefined
+                        GPIO_PIN_RESET);
+..\..\hd44780.c(191): error:  #20: identifier "GPIO_PIN_SET" is undefined
+        HAL_GPIO_WritePin(Lcd_Conf.gpio, Lcd_Conf.rw, GPIO_PIN_SET);
+..\..\hd44780.c(193): warning:  #223-D: function "HAL_GPIO_ReadPin" declared implicitly
+        data = HAL_GPIO_ReadPin(Lcd_Conf.gpio, Lcd_Conf.db7);
+..\..\hd44780.c(272): warning:  #223-D: function "HAL_RCC_GetHCLKFreq" declared implicitly
+        bright *= BKL_PERIOD;
+..\..\hd44780.c(274): warning:  #223-D: function "__HAL_TIM_SetCompare" declared implicitly
+        __HAL_TIM_SetCompare(&Handle_Brigt, BKL_CHANNEL, bright);
+..\..\hd44780.c(274): error:  #20: identifier "TIM_CHANNEL_2" is undefined
+        __HAL_TIM_SetCompare(&Handle_Brigt, BKL_CHANNEL, bright);
+..\..\hd44780.c(288): warning:  #223-D: function "HAL_RCC_GetHCLKFreq" declared implicitly
+        cont *= BKL_PERIOD * 2;
+..\..\hd44780.c(290): warning:  #223-D: function "__HAL_TIM_SetCompare" declared implicitly
+        __HAL_TIM_SetCompare(&Handle_Con, CON_CHANNEL, cont);
+..\..\hd44780.c(290): error:  #20: identifier "TIM_CHANNEL_1" is undefined
+        __HAL_TIM_SetCompare(&Handle_Con, CON_CHANNEL, cont);
+..\..\hd44780.c(471): warning:  #223-D: function "__GPIOA_CLK_ENABLE" declared implicitly
+                __GPIOA_CLK_ENABLE();
+..\..\hd44780.c(473): warning:  #223-D: function "__GPIOB_CLK_ENABLE" declared implicitly
+                __GPIOB_CLK_ENABLE();
+..\..\hd44780.c(475): warning:  #223-D: function "__GPIOC_CLK_ENABLE" declared implicitly
+                __GPIOC_CLK_ENABLE();
+..\..\hd44780.c(477): warning:  #223-D: function "__GPIOD_CLK_ENABLE" declared implicitly
+                __GPIOD_CLK_ENABLE();
+..\..\hd44780.c(479): warning:  #223-D: function "__GPIOE_CLK_ENABLE" declared implicitly
+                __GPIOE_CLK_ENABLE();
+..\..\hd44780.c(485): warning:  #223-D: function "__TIM7_CLK_ENABLE" declared implicitly
+        HD44780_CLK_EN();
+..\..\hd44780.c(486): warning:  #223-D: function "HAL_NVIC_SetPriority" declared implicitly
+        HAL_NVIC_SetPriority(HD44780_IRQ, 0, HD44780_PRIORITY);
+..\..\hd44780.c(487): warning:  #223-D: function "HAL_NVIC_EnableIRQ" declared implicitly
+        HAL_NVIC_EnableIRQ(HD44780_IRQ);
+..\..\hd44780.c(491): warning:  #223-D: function "HAL_RCC_GetHCLKFreq" declared implicitly
+        Handle_Lcd.Init.Prescaler = ((HAL_RCC_GetHCLKFreq() / 2) / 62500) - 1;
+..\..\hd44780.c(492): error:  #20: identifier "TIM_CLOCKDIVISION_DIV1" is undefined
+        Handle_Lcd.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+..\..\hd44780.c(493): error:  #20: identifier "TIM_COUNTERMODE_UP" is undefined
+        Handle_Lcd.Init.CounterMode = TIM_COUNTERMODE_UP;
+..\..\hd44780.c(494): warning:  #223-D: function "HAL_TIM_Base_Init" declared implicitly
+        HAL_TIM_Base_Init(&Handle_Lcd);
+..\..\hd44780.c(495): warning:  #223-D: function "HAL_TIM_Base_Start_IT" declared implicitly
+        HAL_TIM_Base_Start_IT(&Handle_Lcd);
+..\..\hd44780.c(525): error:  #20: identifier "TIM_OC_InitTypeDef" is undefined
+        TIM_OC_InitTypeDef oc;
+..\..\hd44780.c(527): warning:  #223-D: function "__GPIOB_CLK_ENABLE" declared implicitly
+        BKL_GPIO_EN();
+..\..\hd44780.c(528): error:  #136: struct "<unnamed>" has no field "Pin"
+        gpio.Pin = BKL_PIN;
+..\..\hd44780.c(528): error:  #20: identifier "GPIO_PIN_15" is undefined
+        gpio.Pin = BKL_PIN;
+..\..\hd44780.c(529): error:  #136: struct "<unnamed>" has no field "Mode"
+        gpio.Mode = GPIO_MODE_AF_OD;
+..\..\hd44780.c(529): error:  #20: identifier "GPIO_MODE_AF_OD" is undefined
+        gpio.Mode = GPIO_MODE_AF_OD;
+..\..\hd44780.c(530): error:  #136: struct "<unnamed>" has no field "Pull"
+        gpio.Pull = GPIO_NOPULL;
+..\..\hd44780.c(530): error:  #20: identifier "GPIO_NOPULL" is undefined
+        gpio.Pull = GPIO_NOPULL;
+..\..\hd44780.c(531): error:  #136: struct "<unnamed>" has no field "Speed"
+        gpio.Speed = GPIO_SPEED_MEDIUM;
+..\..\hd44780.c(531): error:  #20: identifier "GPIO_SPEED_MEDIUM" is undefined
+        gpio.Speed = GPIO_SPEED_MEDIUM;
+..\..\hd44780.c: 25 warnings, 30 errors
+assembling startup_stm32f407xx.s...
+compiling system_stm32f4xx.c...
+".\Objects\lekcja.axf" - 30 Error(s), 29 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM::CMSIS:CORE:4.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.3.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.6.0.pack
+                Keil::Device:Startup:2.4.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 2.4.0
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\Przemek\Desktop\MIKROKONTROLERY\LCD_ver2\RTE
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0
+  C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+
+   * Component: Keil::Device:Startup:2.4.0
+      Source file:   MDK\Device\Source\ARM\STM32F40xxx_41xxx_OPT.s
+      Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
+      Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f407xx.s
+      Source file:   MDK\Device\Source\ARM\system_stm32f4xx.c
+Target not created.
+</pre>
+</body>
+</html>

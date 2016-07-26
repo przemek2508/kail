@@ -1,0 +1,10 @@
+.\objects\stm32f4xx_it.o: ..\..\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\ADC_Interleaved_DMAmode2\stm32f4xx_it.c
+.\objects\stm32f4xx_it.o: ..\..\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\ADC_Interleaved_DMAmode2\stm32f4xx_it.h
+.\objects\stm32f4xx_it.o: ..\..\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\ST\STM32F4xx\Include\stm32f4xx.h
+.\objects\stm32f4xx_it.o: ..\..\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\Include\core_cm4.h
+.\objects\stm32f4xx_it.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\stm32f4xx_it.o: ..\..\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\Include\core_cmInstr.h
+.\objects\stm32f4xx_it.o: ..\..\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\Include\core_cmFunc.h
+.\objects\stm32f4xx_it.o: ..\..\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\Include\core_cm4_simd.h
+.\objects\stm32f4xx_it.o: ..\..\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\ST\STM32F4xx\Include\system_stm32f4xx.h
+.\objects\stm32f4xx_it.o: ..\..\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\IO_Toggle\stm32f4xx_conf.h
